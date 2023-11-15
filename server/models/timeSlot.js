@@ -1,4 +1,4 @@
-const pool = require('..config/db');
+const pool = require('../config/db');
 
 const getAvailableTimeSlots = async (filters) => {
   let query = 'SELECT * FROM TimeSlots';

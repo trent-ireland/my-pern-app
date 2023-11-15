@@ -1,4 +1,4 @@
-const { getAvailableTimeSlots } = require('../models/timeSlotModel'); 
+const { getAvailableTimeSlots } = require('../models/timeSlot'); 
 
 exports.getTimeSlots = async (req, res) => {
     // Extract filter options from request query parameters

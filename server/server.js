@@ -8,8 +8,10 @@ const rateLimit = require('express-rate-limit');
 const bookingRoutes = require('./routes/bookingRoutes');
 const serviceRoutes = require('./routes/serviceRoutes');
 const timeSlotRoutes = require('./routes/timeSlotRoutes');
+const neighborhoodRoutes = require('./routes/neighborhoodRoutes'); // Import neighborhood routes
 const adminRoutes = require('./routes/adminRoutes');
 const app = express();
+
 
 // Security Enhancements
 app.use(helmet({
@@ -57,9 +59,8 @@ app.use(express.urlencoded({ extended: true })); // for parsing application/x-ww
 app.use('/bookings', bookingRoutes);
 app.use('/services', serviceRoutes);
 app.use('/timeslots', timeSlotRoutes);
+app.use('/admin/neighborhoods', neighborhoodRoutes); // Mount neighborhood routes under the admin path
 app.use('/admin', adminRoutes);
-
-
 // Basic route for testing
 app.get('/', (req, res) => {
   res.send('Hello World with enhanced security!');
