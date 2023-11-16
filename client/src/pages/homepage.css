@@ -1,0 +1,17 @@
+.homepage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #779167; /* Dark green background from the logo */
+    color: #ffffff; /* White text for contrast */
+    font-family: 'Roboto', sans-serif; /* Professional and modern font */
+}
+
+h1 {
+    font-size: 2rem; /* Slightly larger for emphasis */
+    color: #ffffff; /* Maintaining white text */
+    margin: 0; /* Removing default margin */
+    padding: 0; /* Removing default padding */
+}

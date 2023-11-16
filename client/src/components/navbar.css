@@ -1,0 +1,69 @@
+/* Updated navbar.css */
+
+/* Define a custom font family for the text */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.navbar {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  justify-content: center; /* Center the content horizontally and vertically */
+  align-items: center;
+  background-color: #779167;
+  padding: 0.5em;
+  border-bottom: 2px solid #001a0e; /* Add a white border to the bottom */
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+}
+
+/* Increase the image size and set a maximum height */
+.nav-logo img {
+  max-width: 100%; /* Ensure the logo doesn't go outside the navbar */
+  max-height: 200px; /* Set a maximum height for the logo */
+  height: auto;
+  margin-bottom: 10px; /* Add some spacing between logo and wording */
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+/* Apply the custom font to the text and center it horizontally */
+.nav-links a {
+  text-decoration: none;
+  color: #01160c;
+  font-weight: bold;
+  font-size: 1.8rem; /* Increase the font size slightly for the words */
+  font-family: 'Roboto', sans-serif;
+  padding: 0.2rem 1rem;
+  transition: color 0.3s ease-in-out;
+  flex-grow: 1; /* Spread out links evenly */
+  text-align: center; /* Center the text horizontally */
+  margin: 0 10px; /* Reduce spacing between words */
+}
+
+.nav-links a:hover,
+.nav-links a:focus {
+  color: #afbd96;
+}
+
+.admin-login {
+  order: -1;
+  width: 100%;
+  text-align: right;
+  padding-bottom: 0.5rem;
+  align-self: flex-end;
+}
+
+/* Optional: Adjust the font size for the admin link */
+.admin-link {
+  font-size: 0.6rem;
+}
