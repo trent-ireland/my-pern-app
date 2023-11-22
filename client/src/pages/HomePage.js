@@ -1,12 +1,14 @@
 import React from "react";
-import './homepage.css';  // Fixed the typo here
+import SignUpForm from '../components/SignUpForm' ; 
+import './homepage.css';
 
-const HomePage = () => {  // Changed the component name to PascalCase
-    return (
-        <div className = "homepage"> 
-            <h1>Sign Up!</h1>
-        </div>
-    );
+const HomePage = () => {
+  return (
+    <div className="homepage">
+     
+      <SignUpForm />
+    </div>
+  );
 };
 
-export default HomePage;  // Make sure this matches the component name
+export default HomePage;

@@ -15,3 +15,6 @@ h1 {
     margin: 0; /* Removing default margin */
     padding: 0; /* Removing default padding */
 }
+.DropDownMenu {
+        margin-top: 10px;
+}
