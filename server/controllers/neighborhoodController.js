@@ -20,7 +20,7 @@ const neighborhoodController = {
         }
   
         const createdNeighborhood = await neighborhoodModel.createNeighborhood(name);
-        res.status(201).json(createdNeighborhood);
+        res.status(201).json({message:'Created neighborhood sucessfully'});
       } catch (err) {
         console.error(err);
         res.status(500).json({ error: 'Internal server error' });
