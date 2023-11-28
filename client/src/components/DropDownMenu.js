@@ -5,7 +5,7 @@ function NeighborhoodDropdown() {
   const [selectedNeighborhood, setSelectedNeighborhood] = useState('');
 
   useEffect(() => {
-    fetch(' http://localhost:3001/neighborhoods')
+    fetch(' http://localhost:3000/neighborhoods')
       .then(response => response.json())
       .then(data => setNeighborhoods(data))
       .catch(error => console.error('Error fetching neighborhoods: ', error));

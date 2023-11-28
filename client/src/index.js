@@ -1,12 +1,7 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
-import App from './App'; // Import your main App component
+import App from './App';
 
-// Ensure that the 'root' element exists in your index.html file
-const container = document.getElementById('root'); 
-
-// Create a root.
-const root = createRoot(container); 
-
-// Initial render: Render an element to the root.
+const container = document.getElementById('root');
+const root = createRoot(container);
 root.render(<App />);

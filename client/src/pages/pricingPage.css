@@ -1,0 +1,10 @@
+.pricingPage {
+    display: flex;
+    justify-content:center;
+    align-items:flex-start;
+    height: 100vh;
+    margin: 0;
+    background-color: #779167; /* Dark green background from the logo */
+    color: #ffffff; /* White text for contrast */
+    font-family: 'Roboto', sans-serif; /* Professional and modern font */
+}
