@@ -1,7 +1,7 @@
 const pool = require('../config/db');
 
-cconst timeSlotModel = {
-    // Asynchronous function to retrieve all time slots, optionally filtered by neighborhood name and/or date.
+const timeSlotModel = {
+  // Asynchronous function to retrieve all time slots, optionally filtered by neighborhood name and/or date.
     async getAllTimeSlots(neighborhoodName, date) {
         // Base SQL query to join timeslots and neighborhoods tables.
         let baseQuery = `

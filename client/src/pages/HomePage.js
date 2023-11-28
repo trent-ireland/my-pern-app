@@ -1,12 +1,12 @@
-import React from "react";
-import SignUpForm from '../components/SignUpForm' ; 
+import React from "react"; 
 import './homepage.css';
+import NeighborhoodDropdown from '../components/DropDownMenu'
 
 const HomePage = () => {
   return (
     <div className="homepage">
      
-      <SignUpForm />
+      <NeighborhoodDropdown onSelectionChange={handleSelectionChange} />
     </div>
   );
 };
