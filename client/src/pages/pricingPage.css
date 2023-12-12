@@ -1,10 +1,71 @@
-.pricingPage {
+/* PricingPage.css */
+
+.PricingPage {
     display: flex;
-    justify-content:center;
-    align-items:flex-start;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Centering content vertically */
     height: 100vh;
     margin: 0;
-    background-color: #779167; /* Dark green background from the logo */
+    background-color: #779167; /* Dark green background, same as homepage */
     color: #ffffff; /* White text for contrast */
-    font-family: 'Roboto', sans-serif; /* Professional and modern font */
+    font-family: 'Roboto', sans-serif; /* Consistent font with homepage */
+}
+
+.PricingPage h1, .PricingPage h2 {
+    color: #ffffff; /* White text for headers */
+    margin: 20px 0; /* Spacing for headers */
+}
+
+.PricingPage ul {
+    list-style-type: none; /* Removing default bullet points */
+    padding: 0; /* Removing default padding */
+    text-align: center; /* Centering list items */
+}
+
+.PricingPage li {
+    margin-bottom: 10px; /* Spacing between list items */
+}
+
+.PricingPage form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #6b8f77; /* Slightly lighter green for form background */
+    border-radius: 8px; /* Rounded corners for the form */
+    margin-top: 20px;
+    width: 80%; /* Responsive form width */
+    max-width: 500px; /* Maximum width of the form */
+}
+
+.PricingPage label {
+    margin: 10px 0; /* Spacing for each label */
+    display: block; /* Ensuring labels are on separate lines */
+    text-align: center; /* Centering labels */
+}
+
+.PricingPage input[type="checkbox"], .PricingPage input[type="number"] {
+    margin-left: 10px; /* Spacing after checkboxes and number inputs */
+}
+
+.PricingPage button {
+    background-color: #4c6d56; /* Darker green for buttons */
+    color: #ffffff; /* White text on buttons */
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 5px; /* Rounded corners for button */
+    cursor: pointer; /* Hand cursor on hover */
+    font-family: 'Roboto', sans-serif;
+}
+
+.PricingPage button:hover {
+    background-color: #3e5744; /* Even darker green on hover */
+}
+
+/* Adjusting total cost display */
+.PricingPage h3 {
+    margin-top: 20px;
+    text-align: center; /* Centering total cost text */
 }
